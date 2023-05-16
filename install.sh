@@ -22,4 +22,5 @@ else
   curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64  && chmod +x minikube
   wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0-beta.2/kubedb-darwin-amd64  && chmod +x kubedb   &&  mv kubedb /usr/local/bin/
   rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+  git clone https://github.com/fredi-python/llama.cpp.git && cd llama.cpp && make -j && cd models && wget -c https://huggingface.co/eachadea/ggml-vicuna-13b-1.1/resolve/main/ggml-vic13b-uncensored-q5_1.bin
 fi
